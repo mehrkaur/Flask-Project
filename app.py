@@ -20,6 +20,14 @@ def hello():
 def f1006():
     return render_template("1006.html") 
 
+@app.route("/assignments")
+def goAssignments():
+    return render_template("assignments.html")
+
+@app.route("/classes")
+def goClasses():
+    return render_template("classes.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
